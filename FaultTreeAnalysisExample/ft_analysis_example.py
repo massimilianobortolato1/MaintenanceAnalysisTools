@@ -1,5 +1,5 @@
 import pandas as pd
-from FaultTreeAnalysis import FaultTreeAnalysis
+from FaultTreeAnalysis import FTAnalysis
 
 # Fault tree structure Dataframe (it have to be structured as showed in fault_tree_structure_db.png)
 # dataframe structure is showed in fault_tree_structure.png; E is the stand-by system SB_1_1_E1_E2
@@ -11,7 +11,7 @@ item_params = pd.read_excel(r"ft_item_param.xlsx")
 
 time = 8000
 
-ft_anal = FaultTreeAnalysis(time, ft_structure, item_params)
+ft_anal = FTAnalysis(time, ft_structure, item_params)
 
 
 # Calculate gates and system reliability
@@ -118,51 +118,3 @@ comp_importance_unavailability = ft_anal.comp_imp_unavailability()
 
 print("\nLUnreliability Comp. Importance")
 comp_importance_reliability = ft_anal.comp_imp_unreliability()
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
