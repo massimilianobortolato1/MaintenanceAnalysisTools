@@ -1,6 +1,8 @@
 import pandas as pd
 from FaultTreeAnalysis import FTAnalysis
 
+#See results in ft_analysis_example_results.png
+
 # Fault tree structure Dataframe (it have to be structured as showed in fault_tree_structure_db.png)
 # dataframe structure is showed in fault_tree_structure.png; E is the stand-by system SB_1_1_E1_E2
 ft_structure = pd.read_excel("ft_test_1.xlsx")
