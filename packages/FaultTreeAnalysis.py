@@ -544,7 +544,7 @@ def items_unav(time_array, item_params):
 
 
 
-class FaultTreeAnalysis:
+class FTAnalysis:
     
     def __init__(self, time_array, ft_structure, item_params):        
       
